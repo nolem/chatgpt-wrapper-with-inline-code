@@ -416,7 +416,7 @@ class GPTShell(cmd.Cmd):
 
         # Loop through each match and replace the corresponding substring
         for match in matches:
-            print("handle file" + filename)
+            print("handle file" + match)
             filename = match
             if os.path.isfile(filename):
                 with open(filename, "r") as f:
