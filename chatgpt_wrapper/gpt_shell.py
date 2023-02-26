@@ -426,7 +426,7 @@ class GPTShell(cmd.Cmd):
             else:
                 print("File not found: " + filename)
 
-        print("" + filename)
+        print("returned string: " + string)
 
         return string
 
