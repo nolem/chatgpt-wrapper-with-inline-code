@@ -407,7 +407,7 @@ class GPTShell(cmd.Cmd):
         "`!ask` asks a question to chatgpt. It is purely optional. Example: `!ask what is 6+6` is the same as `what is 6+6`"
         return self.default(line)
 
-    def replace_file_strings(string):
+    def replace_file_strings(self, string):
         # Regular expression to find all occurrences of !file and their arguments
         pattern = r"!file\s+(\S+)"
 
